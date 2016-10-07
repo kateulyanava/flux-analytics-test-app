@@ -1,0 +1,32 @@
+{
+  "name": "flux",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "dependencies": {
+    "browserify": "^13.1.0",
+    "flux": "^3.0.0",
+    "gulp": "^3.9.1",
+    "keymirror": "^0.1.1",
+    "react": "^15.3.2",
+    "react-doc": "^1.0.4",
+    "react-dom": "^15.3.2",
+    "react-router-component": "^0.36.0",
+    "reactify": "^1.1.1",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kateulyanava/flux-analytics-test-app.git"
+  },
+  "author": "Kate Ulyanava",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kateulyanava/flux-analytics-test-app/issues"
+  },
+  "homepage": "https://github.com/kateulyanava/flux-analytics-test-app#readme"
+}
