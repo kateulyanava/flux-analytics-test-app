@@ -4,11 +4,11 @@ var IntervalsStore = require('../stores/IntervalsStore');
 
 var intervals;
 
-function getIntervalItem(interval, i) {
+function _getIntervalItem(interval, i) {
 	return <IntervalItem interval={interval} current={IntervalsStore.isCurrent(interval)} key={i} />;
 }
 
-function getState() {
+function _getState() {
 	return {
 		currentInterval: IntervalsStore.getCurrentInterval()
 	};
@@ -24,11 +24,11 @@ var IntervalSwitcher = React.createClass({
 	},
 
 	getInitialState: function() {
-		return getState();
+		return _getState();
 	},
 
 	render: function() {
-		var intervals = IntervalsStore.getIntevals().map(getIntervalItem);
+		var intervals = IntervalsStore.getIntevals().map(_getIntervalItem);
 
 		return (
 			<ul className="toggle1">
@@ -38,7 +38,7 @@ var IntervalSwitcher = React.createClass({
 	},
 
 	_onChange: function() {
-		this.setState(getState());
+		this.setState(_getState());
 	}
 });
 
