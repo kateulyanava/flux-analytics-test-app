@@ -15,9 +15,9 @@ function mapInterval(interval) {
 }
 
 var IntervalsStore = assign({}, EventEmitter.prototype, {
-	init: function(intervalsData, defaultInterval) {
+	init: function(intervalsData) {
 		_intervals = intervalsData.map(mapInterval);
-		_currentInterval = defaultInterval ? mapInterval(defaultInterval) : _intervals[0];
+		_currentInterval = mapInterval(intervalsData.filter(function(interval) { return interval.default; })[0]);
 	},
 
 	emitChange: function() {

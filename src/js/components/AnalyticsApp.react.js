@@ -8,6 +8,7 @@ var AnalyticsApp = React.createClass({
 		return (
 			<div>
 				<IntervalSwitcher />
+				<Chart />
 			</div>
 		);
 	}	
